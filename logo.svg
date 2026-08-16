@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="g" x1="60" y1="50" x2="450" y2="470" gradientUnits="userSpaceOnUse"><stop stop-color="#00d9ff"/><stop offset=".45" stop-color="#4b45ff"/><stop offset=".75" stop-color="#c73dff"/><stop offset="1" stop-color="#ff7b3d"/></linearGradient>
+    <radialGradient id="bg"><stop stop-color="#11134a"/><stop offset="1" stop-color="#030817"/></radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#g)" stroke-width="6" opacity=".42"/>
+  <g filter="url(#glow)" fill="none" stroke="url(#g)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M164 128v210h145" stroke-width="42"/>
+    <path d="M163 338l130-124 80 124" stroke-width="38"/>
+  </g>
+  <g transform="translate(303 92)">
+    <path d="M28 4c13 0 22 9 22 21 12 0 21 8 21 20 0 6-3 12-8 16 4 4 6 9 6 15 0 13-10 23-23 23-3 9-11 15-21 15-10 0-18-5-22-14-13 1-24-9-24-22 0-7 3-13 8-17-5-4-8-10-8-17C-21 30-10 19 4 19 5 10 14 4 28 4z" fill="#061128" stroke="#09c9ff" stroke-width="6"/>
+    <text x="28" y="64" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="44" font-weight="800">AI</text>
+  </g>
+</svg>

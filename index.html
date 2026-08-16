@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#030817" />
+  <meta name="description" content="LEARNEX AI — an educational AI assistant for Mathematics, Science, Chemistry, Geography and History." />
+  <title>LEARNEX AI</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="splash" class="splash" aria-hidden="true">
+    <div class="splash-glow"></div>
+    <img src="logo.svg" alt="LEARNEX AI" class="splash-logo" />
+    <div class="splash-name">LEARNEX <span>AI</span></div>
+    <div class="loader"><i></i><i></i><i></i></div>
+    <div class="byline">BY ARIJIT DAS</div>
+  </div>
+
+  <div class="app-shell">
+    <header class="topbar glass">
+      <button id="menuBtn" class="icon-btn" aria-label="Open menu" title="Menu"><span class="hamb"><b></b><b></b><b></b></span></button>
+      <div class="brand">
+        <img src="logo.svg" alt="LEARNEX AI logo" class="brand-logo" />
+        <div><div class="brand-name">Learnex <span>AI</span></div><div class="status"><span></span> Educational assistant</div></div>
+      </div>
+      <button id="clearBtn" class="clear-btn" aria-label="Clear chat"><span>✦</span> Clear</button>
+    </header>
+
+    <main class="chat-area">
+      <section id="welcome" class="welcome">
+        <div class="hero-logo-wrap"><img src="logo.svg" alt="LEARNEX AI" class="hero-logo" /></div>
+        <h1>What would you <span>like to learn?</span></h1>
+        <p>Ask a question. LEARNEX AI will respond naturally.</p>
+        <div class="chips">
+          <button class="chip math" data-prompt="Explain fractions like I'm 12">∑√x <span>Explain fractions like I'm 12</span><b>＋</b></button>
+          <button class="chip science" data-prompt="Explain photosynthesis simply">◈ <span>Explain photosynthesis</span><b>＋</b></button>
+              <button class="chip brain" data-prompt="Explain neural networks simply">♧ <span>Explain neural networks</span><b>＋</b></button>
+        </div>
+      </section>
+
+      <div id="messages" class="messages"></div>
+      <div id="typing" class="typing glass" hidden><span></span><span></span><span></span><em>Thinking…</em></div>
+    </main>
+
+    <div class="composer-wrap">
+      <form id="composer" class="composer glass">
+        <button type="button" id="attachBtn" class="round-btn" aria-label="More options">＋</button>
+        <textarea id="input" rows="1" maxlength="12000" placeholder="Ask a question..." aria-label="Ask a question"></textarea>
+        <button type="button" id="voiceBtn" class="round-btn voice" aria-label="Voice input">◉</button>
+        <button type="submit" id="sendBtn" class="send-btn" aria-label="Send">➤</button>
+      </form>
+      <div class="composer-note">Enter to send · Shift + Enter for a new line</div>
+    </div>
+  </div>
+
+  <aside id="sidePanel" class="side-panel" aria-hidden="true">
+    <div class="side-head"><div><strong>LEARNEX AI</strong><small>Learning tools</small></div><button id="closeMenu" class="icon-btn">×</button></div>
+    <div class="side-content">
+      <button class="side-item" data-action="new"><span>＋</span><div><b>New chat</b><small>Start a fresh conversation</small></div></button>
+      <button class="side-item" data-action="math"><span>∑</span><div><b>Math mode</b><small>Step-by-step problem solving</small></div></button>
+      <button class="side-item" data-action="study"><span>▣</span><div><b>Study helper</b><small>Summaries, examples and quizzes</small></div></button>
+      <button class="side-item" data-action="about"><span>i</span><div><b>About LEARNEX</b><small>Educational AI assistant</small></div></button>
+    </div>
+    <div class="side-footer">Ask naturally. LEARNEX AI adapts to your language.</div>
+  </aside>
+  <div id="backdrop" class="backdrop"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
