@@ -1,9 +1,0 @@
-{
-  "name":"learnex-ai",
-  "version":"4.0.0",
-  "private":true,
-  "type":"module",
-  "scripts":{"start":"node server.js","build":"node -e \"console.log(\'LEARNEX AI build OK — flat root deployment\')\""},
-  "engines":{"node":">=20"},
-  "dependencies":{"express":"^5.1.0"}
-}
